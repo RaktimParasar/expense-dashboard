@@ -2,22 +2,25 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Balance from "./Balance";
 import Recent from "./Recent";
+import monica from "../assets/monica.jpg";
+import joseph from "../assets/joseph.jpg";
+import sofia from "../assets/sofia.jpg";
+
 const Transaction = () => {
   return (
     <div className="transaction">
-      <h3>Quick transaction</h3>
+      <h3 className="transaction--color">Quick transaction</h3>
       <Carousel
         additionalTransfrom={0}
         arrows
         autoPlaySpeed={3000}
         centerMode={false}
-        className="carousel"
-        containerClass="container"
+        containerClass="carousel"
         dotListClass=""
         draggable
         focusOnSelect={false}
         infinite={false}
-        itemClass=""
+        itemClass="slider__mg__left"
         keyBoardControl
         minimumTouchDrag={80}
         renderButtonGroupOutside={false}
@@ -25,7 +28,7 @@ const Transaction = () => {
         responsive={{
           desktop: {
             breakpoint: {
-              max: 1024,
+              max: 3000,
               min: 1024,
             },
             items: 3,
@@ -59,22 +62,22 @@ const Transaction = () => {
             <p className="manual__text">Manual</p>
           </div>
         </div>
-        <div className="slider__box slider__mg__left">
+        <div className="slider__box">
           <div>
-            <img src="https://via.placeholder.com/50x50" alt="placeholder" />
-            <p className="manual__text">Monica. A</p>
+            <img className="profile__pic" src={monica} alt="placeholder" />
+            <p className="manual__text">Monica</p>
           </div>
         </div>
-        <div className="slider__box slider__mg__left">
+        <div className="slider__box">
           <div>
-            <img src="https://via.placeholder.com/50x50" alt="placeholder" />
-            <p className="manual__text">Monica. A</p>
+            <img className="profile__pic" src={joseph} alt="placeholder" />
+            <p className="manual__text">Joseph</p>
           </div>
         </div>
-        <div className="slider__box slider__mg__left">
+        <div className="slider__box">
           <div>
-            <img src="https://via.placeholder.com/50x50" alt="placeholder" />
-            <p className="manual__text">Monica. A</p>
+            <img className="profile__pic" src={sofia} alt="placeholder" />
+            <p className="manual__text">Sofia</p>
           </div>
         </div>
       </Carousel>

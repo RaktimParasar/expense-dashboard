@@ -4,7 +4,7 @@ import Transaction from "./components/Transaction";
 
 const App = () => {
   return (
-    <main className="container">
+    <main className="main--container">
       <Sidebar />
       <Cards />
       <Transaction />
