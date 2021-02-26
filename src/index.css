@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap");
+
+:root {
+  --lightgray: #ededeb;
+  --darkblue: #1e3a8a;
+  --darkred: #ef4444;
+  --linecolor: #d1d5db;
+}
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--lightgray);
+  display: grid;
+  height: calc(100vh - 100px);
+  padding: 40px;
+  font-family: "poppins", sans-serif;
+}
+
+/* main container */
+.container {
+  display: flex;
+  height: 100%;
+}
+
+/* sidebar */
+.sidebar {
+  width: min(20%, 250px);
+  height: 100vh;
+  color: var(--darkblue);
+  border-right: solid 1px var(--linecolor);
+}
+
+.sidebar__head {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.sidebar__logo {
+  font-size: 40px;
+}
+
+.sidebar__header {
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+/* navbar */
+.navbar {
+  margin-top: 30px;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.navbar__tabs {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar__icon {
+  font-size: 20px;
+}
+
+.navbar__link {
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.navbar__notification {
+  background: var(--darkred);
+  margin-left: 10px;
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.navbar__active {
+  padding: 10px;
+  box-shadow: 0 0 0 1px var(--linecolor);
+  border-radius: 40%;
+}
+
+/* cards section */
+.cards {
+  width: 50%;
+  width: min(50%, 500px);
+}
+
+.cards__container {
+  padding: 60px;
+  border-bottom: 1px solid var(--linecolor);
+  border-bottom-left-radius: 20px;
+}
+
+.cards__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards__header__title {
+  color: var(--darkblue);
+  font-size: 22px;
+}
+
+.cards__info {
+  color: var(--darkblue);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cards__add__button {
+  margin-left: 10px;
+  background-color: white;
+  color: var(--darkblue);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.visa {
+  background: linear-gradient(150deg, #965467, #35375d, #965467);
+  margin-top: 30px;
+  border-radius: 20px;
+  color: var(--linecolor);
+  padding: 20px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.visa__card {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.visa__card__money {
+  display: inline-flex;
+}
+
+.visa__web__log {
+  font-size: 26px;
+  width: 40px;
+  text-align: left;
+  border-right: 1px solid var(--linecolor);
+}
+
+.visa__card__logo {
+  margin-left: 20px;
+  font-size: 26px;
+}
+
+.visa__dot {
+  background-color: var(--linecolor);
+  color: var(--darkblue);
+  line-height: 2;
+  font-size: 13px;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+}
+
+.visa__date {
+  font-size: 13px;
+  text-align: center;
+}
+
+.visa--background {
+  background: #202020;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.currency__left {
+  margin-left: 5px;
+}
+
+.visa__card__number {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.card__detail {
+  background: var(--linecolor);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.card__inline {
+  display: inline-flex;
+}
+
+.card__money__bg {
+  background: var(--lightgray);
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 14px;
+  font-weight: 550;
+  color: var(--darkblue);
+}
+
+.card__number {
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--darkblue);
+  width: 50px;
+  border-right: 1px solid #8d8d8d;
+}
+
+.logo__card {
+  font-size: 23px;
+  color: var(--darkblue);
+}
+
+.top__div {
+  position: absolute;
+  top: -6px;
+  right: -5px;
+}
+
+.limit__container {
+  padding: 60px;
+  border-top: 1px solid var(--linecolor);
+  border-top-left-radius: 20px;
+}
+
+.limit__box {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  color: var(--darkblue);
+}
+
+.limit__logo {
+  font-size: 60px;
+  margin-right: 20px;
+}
+
+.mg__top {
+  margin-top: 20px;
+}
+
+.pd__top {
+  padding-top: 20px;
+}
+
+.limit__num {
+  font-size: 13px;
+  text-align: start;
+  font-weight: 550;
+}
+
+/* transaction section */
+.transaction {
+  background: #fbfbfb;
+  border-radius: 40px;
+  padding: 60px;
+  margin-left: 30px;
+  width: min(60%, 600px);
+}
+
+.carousel {
+  max-width: 500px;
+  height: 30vh;
+}
+
+.slider__box__manual {
+  border: 2px solid var(--darkblue);
+  border-radius: 20px;
+  width: 7vw;
+  height: 18vh;
+  padding-top: 25px;
+  text-align: center;
+  color: var(--darkblue);
+}
+
+.manual__logo {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.manual__text {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.slider__box {
+  border: 2px solid var(--darkblue);
+  border-radius: 20px;
+  width: 7vw;
+  height: 18vh;
+  padding-top: 25px;
+  text-align: center;
+  background: var(--lightgray);
+  color: #575757;
+}
+
+.slider__mg__left {
+  margin-left: -40px;
+}
+
+/* todo margin between slider box*/
+
+.balance__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--darkblue);
+}
+
+.balance__text {
+  font-size: 20px;
+}
+
+.balance__desc {
+  padding-top: 3px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.balance__btn {
+  background: none;
+  border: 1px solid var(--linecolor);
+  border-radius: 5px;
+  padding: 5px;
+  color: var(--darkblue);
+  font-weight: 600;
+}
+
+.graph {
+  margin-top: 20px;
+}
+
+/* recent */
+
+.recent {
+  margin-top: 30px;
+}
+
+.today {
+  font-size: 15px;
+  color: var(--darkblue);
+  margin-top: 10px;
+}
+
+.activity__icon {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--lightgray);
+}
+
+.activity__left {
+  margin-left: 20px;
+}
+
+.activity__amount {
+  font-weight: 600;
+}
